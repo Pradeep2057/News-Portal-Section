@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Font Awesome Cdn-->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+            integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous">
+
+
+        <title>Nav Bar</title>
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+        body {
+            font-family: poppins;
+            background: rgb(36, 36, 36);
+        }
+
+        a {
+            font-family: poppins;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .navbar{
+            background: rgb(36, 36, 36);
+        }
+        .top-nav-center{
+            margin-left: auto;
+            width: 100%;
+        }
+        .nav-link{
+            color: #ffffff;
+            font-weight: 500;
+            font-size: 18px;
+            padding: 10px 20px;
+        }
+        .nav-link:hover{
+            background-color: #303030;
+            color: #ffffff;
+            font-weight: 500;
+            font-size: 18px;
+            padding: 10px 20px;
+        }
+
+        i {
+            margin-right: 20px;
+            color: #ffffff;
+        }
+        hr{
+            height: 1px;
+            color: #ffffff;
+        }
+
+      .fa-bars {
+            font-size: 20px;
+        }
+        .navbar-toggler{
+            outline: none;
+        }
+
+        .overlay {
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(0deg,
+          rgba(0, 0, 0, 1) 0%,
+          rgba(0, 0, 0, 1) 2%,
+          rgba(0, 0, 0, 0) 50%);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .overlay-small{
+        height: 100%;
+        width: 100%;
+        background: rgba(0,0,0,0.5);
+        position: absolute;
+    }
+  /* 
+        @media (max-width: 768px) {
+            .nav-fill {
+                margin: auto;
+            }
+
+            .btn-nav {
+                flex-direction: row;
+                margin-left: 25% !important;
+            }
+
+            #navbarSupportedContent {
+                padding-bottom: 20px;
+            }
+        } */
+    </style>
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><img src="./logo.png" height="70px"
+                            width="70px" alt=""></li>
+                </ul>
+
+                <ul class="navbar-nav mb-2 mb-lg-0 nav-fill px-5"
+                    style="margin-left:auto; width: 70%;">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Programs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">CSR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- <ul class="navbar-nav btn-nav" style="margin-left:auto;">
+                    <button class="btn-danger btn-sm mx-2" style="border: none;
+                        outline:none; border-radius:0px;"><i
+                            class="fa-solid fa-tv"></i><span class="ml-2">Live
+                            TV </span></button>
+                    <button class="btn-danger btn-sm mx-2" style="border: none;
+                        outline:none; border-radius:0px;"><i
+                            class="fa-solid fa-radio"></i><span class="ml-2">Live
+                            FM </span></button>
+                </ul> -->
+
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+            <div class="col-md-3">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container">
+                        <button class="navbar-toggler" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle
+                            navigation">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <div class="collapse navbar-collapse"
+                            id="navbarSupportedContent">
+                            <nav class="nav flex-column">
+                                <a class="nav-link" aria-current="page"
+                                    href="#"><i class="fa-solid
+                                        fa-earth-americas"></i>Coronavirus</a>
+                                <hr>
+                                <a class="nav-link" aria-current="page"
+                                    href="#"><i class="fa-solid fa-newspaper"></i>News</a>
+                                <a class="nav-link" aria-current="page"
+                                    href="#"><i class="fa-solid fa-baseball"></i>Sports</a>
+                                <a class="nav-link" aria-current="page"
+                                    href="#"><i class="fa-solid fa-microchip"></i>Technology</a>
+                                <a class="nav-link" aria-current="page"
+                                    href="#"><i class="fa-solid fa-cloud-sun"></i>Weather</a>
+                                <a class="nav-link" aria-current="page"
+                                    href="#"><i class="fa-solid
+                                        fa-traffic-light"></i>Traffic</a>
+                                <a class="nav-link" aria-current="page"
+                                    href="#"><i class="fa-solid
+                                        fa-money-check-dollar"></i>Money</a>
+                                <a class="nav-link" aria-current="page"
+                                    href="#"><i class="fa-solid fa-people-line"></i>Lifestyle</a>
+                                <a class="nav-link" aria-current="page"
+                                    href="#"><i class="fa-solid fa-heart-pulse"></i>Health</a>
+                                <a class="nav-link" aria-current="page"
+                                    href="#"><i class="fa-solid fa-video"></i>Movie</a>
+                                <a class="nav-link" aria-current="page"
+                                    href="#"><i class="fa-solid fa-file-video"></i>Videos</a>
+                                <hr>
+                                <a class="nav-link" aria-current="page"
+                                    href="#"><i class="fa-solid
+                                        fa-business-time"></i>Business</a>
+                                <a class="nav-link" aria-current="page"
+                                    href="#"><i class="fa-solid
+                                        fa-chart-simple"></i>Stock Market</a>
+                                <a class="nav-link" aria-current="page"
+                                    href="#"><i class="fa-solid fa-tv"></i>Live
+                                    TV</a>
+                                <a class="nav-link" aria-current="page"
+                                    href="#"><i class="fa-solid fa-tv"></i>Live
+                                    TV</a>
+                            </nav>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-md-8">
+                <div class="row mb-5">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                          aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                          aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                          aria-label="Slide 3"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active rounded" data-bs-interval="2000" style="height:400px;">
+                          <img src="./_M6R4506.JPG" class="d-block w-100 rounded" style="min-height: 400px; object-fit: cover;"
+                            alt="..." />
+                          <div class="overlay"></div>
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>
+                              Some representative placeholder content for the first
+                              slide.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="carousel-item rounded" data-bs-interval="2000" style="height:400px;">
+                          <img src="./_MG_3103.jpg" class="d-block w-100 rounded" style="min-height: 400px; object-fit: cover;"
+                            alt="..." />
+                          <div class="overlay"></div>
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>
+                              Some representative placeholder content for the second
+                              slide.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="carousel-item rounded" data-bs-interval="2000" style="height:400px;">
+                          <img src="./_MG_9726.jpg" class="d-block w-100  rounded" style="min-height: 400px; object-fit: cover;"
+                            alt="..." />
+                          <div class="overlay"></div>
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>
+                              Some representative placeholder content for the third
+                              slide.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+        
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <div class="card text-bg-dark h-100" style="border: none; border-radius:4px;">
+                          <img
+                            src="./7-Winner of Woman Video Maker of the Year in Mero Gaun Mero Thaun Video Challenge-The Tune of Jhakri-Devaki Bista.jpg"
+                            class="card-img" alt="..." />
+                          <div class="overlay-small"></div>
+                          <div class="card-img-overlay text-white" style="position:absolute; top:54%;">
+                            <p class="card-text">Last updated 3 mins ago</p>
+                            <h5 class="card-title">
+                              This is a wider card with supporting text below as a natural
+                            </h5>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <div class="card text-bg-dark h-100" style="border: none; border-radius:4px;">
+                          <img
+                            src="./7-Winner of Woman Video Maker of the Year in Mero Gaun Mero Thaun Video Challenge-The Tune of Jhakri-Devaki Bista.jpg"
+                             class="card-img" alt="..." />
+                          <div class="overlay-small"></div>
+                          <div class="card-img-overlay text-white" style="position:absolute; top:54%;">
+                            <p class="card-text">Last updated 3 mins ago</p>
+                            <h5 class="card-title">
+                              This is a wider card with supporting text below as a natural
+                            </h5>
+                          </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-12 mb-3">
+                        <div class="card text-bg-dark" style="border: none; border-radius:4px;">
+                          <img
+                            src="./7-Winner of Woman Video Maker of the Year in Mero Gaun Mero Thaun Video Challenge-The Tune of Jhakri-Devaki Bista.jpg"
+                            class="card-img" alt="..." style="height:400px; object-fit: cover;" />
+                          <div class="overlay-small"></div>
+                          <div class="card-img-overlay text-white" style="position:absolute; top:74%;">
+                            <p class="card-text">Last updated 3 mins ago</p>
+                            <h5 class="card-title">
+                              This is a wider card with supporting text below as a natural
+                            </h5>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        </div>
+
+
+
+
+
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous">
+        </script>
+
+
+
+    </body>
+
+</html>
